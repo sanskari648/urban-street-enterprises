@@ -1,29 +1,12 @@
-backend:
-  name: git-gateway
-  branch: main
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CMS</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  </body>
+</html>
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
-
-collections:
-  - name: "products"
-    label: "Products"
-    folder: "content/products"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
-
-  - name: "events"
-    label: "Events"
-    folder: "content/events"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Event Name", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Details", name: "description", widget: "text" }
-      - { label: "Banner", name: "banner", widget: "image" }
