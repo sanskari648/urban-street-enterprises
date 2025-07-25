@@ -1,4 +1,6 @@
-/* ====== RESET ====== */
+/* ===== Urban Street Enterprises - style.css ===== */
+
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@ body {
   line-height: 1.6;
 }
 
-/* ====== NAVBAR ====== */
+/* ===== NAVBAR ===== */
 header {
   position: sticky;
   top: 0;
@@ -43,7 +45,7 @@ nav a:hover {
   color: #ff6a00;
 }
 
-/* ====== HERO SECTION ====== */
+/* ===== HERO SECTION ===== */
 .hero {
   background: url('hero-banner.jpg') center/cover no-repeat;
   height: 75vh;
@@ -57,9 +59,10 @@ nav a:hover {
 .hero h1 {
   font-size: 48px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  max-width: 80%;
 }
 
-/* ====== SECTIONS ====== */
+/* ===== SECTION GENERAL ===== */
 .section {
   padding: 60px 5%;
 }
@@ -71,7 +74,7 @@ nav a:hover {
   margin-bottom: 40px;
 }
 
-/* ====== PRODUCT GRID ====== */
+/* ===== PRODUCT GRID ===== */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -112,7 +115,20 @@ nav a:hover {
   margin-top: 5px;
 }
 
-/* ====== BUTTON ====== */
+/* ===== EVENT REGISTRATION ===== */
+.event-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.event-card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTONS ===== */
 .btn {
   display: inline-block;
   background: #ff6a00;
@@ -128,7 +144,7 @@ nav a:hover {
   background: #e85c00;
 }
 
-/* ====== FORM ====== */
+/* ===== FORM STYLES ===== */
 form {
   max-width: 600px;
   margin: auto;
@@ -164,17 +180,7 @@ form button:hover {
   background: #222;
 }
 
-/* ====== FOOTER ====== */
-footer {
-  background: #000;
-  color: #aaa;
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: 40px;
-  font-size: 14px;
-}
-
-/* ====== INSTAGRAM FEED (OPTIONAL) ====== */
+/* ===== INSTAGRAM FEED ===== */
 .instagram-feed {
   display: flex;
   flex-wrap: wrap;
@@ -190,7 +196,17 @@ footer {
   border-radius: 8px;
 }
 
-/* ====== RESPONSIVE ====== */
+/* ===== FOOTER ===== */
+footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 32px;
@@ -209,5 +225,6 @@ footer {
     font-size: 26px;
   }
 }
+
 
 
